@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div id="logo-container">
+            <div id="logo">CloudLens</div>
+            <img src="Images/DALL·E 2024-09-30 16.30.37 - A logo featuring a magnifying glass tilted towards the southeast. The magnifying glass has a visible sun in the lens, with a bright, warm yellow-orang.webp" alt="Website Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div id="weather-container">
+        <h1>Weather App</h1>
+        <div id="search-container">
+            <div id="search-bar">
+                <input type="text" id="city" placeholder="Search City">
+                <button onclick="getWeather()">Search</button>
+                <button id="get-location">Current Location</button>
+            </div>
+        </div>
+
+        <img id="weather-icon" src="https://cdn0.iconfinder.com/data/icons/finance-development-outline/512/CEO-15-512.png" alt="Weather Icon">
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+        <div id="hourly-forecast" class="hourly-forecast"></div>
+        <div id="four-day-forecast" class="forecast-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

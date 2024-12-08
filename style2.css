@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(1, 8, 8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    margin-right: 5px;
+}
+
+nav img {
+    height: 45px;
+    width: auto;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4ba0c5;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 100px; 
+}
+
+.section {
+    max-width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 7px;
+}
+
+#mission-statement {
+    background-size: 100% 100%;
+    background-image: url(Images/14731307_rm218-bb-07.jpg);
+    position: relative;
+}
+
+.text-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#mission-text {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Features Section */
+#features {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(173, 216, 230, 0.8));
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#features h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#features p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #34495e;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+#features p strong {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+#features p:last-child {
+    margin-bottom: 0; 
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.section p {
+    font-size: 1.25em;
+    color: #555;
+    margin: 50px 0;
+}
+
+/* Story Behind CloudLens */
+#story-behind {
+    background: linear-gradient(132deg, rgb(255, 206, 236) 0.00%, rgb(151, 150, 240) 100.00%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Choose CloudLens */
+#why-choose {
+    background: linear-gradient(to right, #0099F7, #A5D8FF);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Meet Our Team */
+#team {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(173, 216, 230, 0.8));
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15em;
+    height: 7em;
+    text-align: center;
+}
+
+
+.flex-item p {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 2px 20px;
+    color: #007BFF;
+}
+
+.flex-item img {
+    height: 35px;
+    width: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flex-item img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.future-plans {
+    margin: 10px ;
+    margin-top: 10px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .section {
+        height: auto;
+    }
+
+    .section p {
+        margin: 20px;
+        font-size: 1em;
+    }
+
+    #features {
+        padding: 20px;
+    }
+
+    #features h1 {
+        font-size: 2em;
+    }
+
+    #features p {
+        font-size: 1em;
+    }
+}

@@ -1,6 +1,6 @@
 // Function to fetch weather data
 function getWeather() {
-    const apiKey = 'a95f658418e1c09a2f0979825e38ebda';
+    const apiKey = '';
     const city = document.getElementById('city').value.trim();
 
     if (!city) {

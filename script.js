@@ -1,6 +1,5 @@
 // Function to fetch weather data
 function getWeather() {
-    const apiKey = process.env.API_KEY;
     const city = document.getElementById('city').value.trim();
 
     if (!city) {
@@ -8,8 +7,9 @@ function getWeather() {
         return;
     }
 
-    const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+    const currentWeatherUrl = `https://weather-forecasting-website-404y0zble.vercel.app/api/weather/current?q=${city}`;
+    const forecastUrl = `https://weather-forecasting-website-404y0zble.vercel.app/api/weather/forecast?q=${city}`;
+
 
     // Fetch current weather data
     fetch(currentWeatherUrl)
@@ -37,9 +37,10 @@ function getWeather() {
         });
 }
 function getWeatherByLocation(lat, lon) {
-    const apiKey = 'a95f658418e1c09a2f0979825e38ebda';
-    const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    const currentWeatherUrl = `https://weather-forecasting-website-404y0zble.vercel.app/api/weather/current?lat=${lat}&lon=${lon}`;
+    const forecastUrl = `https://weather-forecasting-website-404y0zble.vercel.app/api/weather/forecast?lat=${lat}&lon=${lon}`;
+
+
 
     // Fetch current weather data
     fetch(currentWeatherUrl)
